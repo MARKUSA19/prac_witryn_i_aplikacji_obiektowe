@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Zadanie 28</title>
+		<meta charset="utf-8"></meta>
+		<script type="text/javascript">
+			function telefon(telefon_k,model_k,rok_k)//początek konstruktora
+			{
+				this.telefon=telefon_k;
+				this.model=model_k;
+				this.rok=rok_k;
+			}//koniec konstruktora
+
+			telefon.prototype.wypisz = function () //definicja metody
+			{
+				alert(this.telefon + ' ' + this.model+ ' ' + this.rok);
+			};
+
+			var telefon1 = new telefon("Xiaomi", "12 Mini", "2022"); // nowy obiekt osoba1
+			var telefon2 = new telefon('Samsung', 'Galaxy S21 Ultra', '2021');
+			telefon1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+			telefon2.wypisz();
+			document.write("dostęp do właściwości"+"<br>");
+			// poniżej dostęp do pól osoby1
+			document.write("telefon pierwszy"+" "+telefon1.telefon+" "+telefon1.model+" "+telefon1.rok);
+		</script>
+	</head>
+	<body>
+		<br>
+		programowanie obiektowe
+  	</body>
+</html>
