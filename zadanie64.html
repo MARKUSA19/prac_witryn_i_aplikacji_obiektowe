@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Zadanie 64</title>
+		<meta charset="utf-8"></meta>
+		<style type="text/css">
+			table	{
+		 			border-top-left-radius:10px;
+					border-top-right-radius:10px;
+					border-bottom-right-radius:10px;
+					border-bottom-left-radius:10px;
+					}
+		</style>
+	</head>
+
+	<body style="font-family:Arial;">
+		<table border="10">
+			<tr>
+				<th colspan="2">Zaokrąglenie narożników obszarów bloków np. DIV</th>
+			</tr>
+
+			<tr>
+				<td>Zaokrąglenie górnego-lewego narożnika:</td>
+				<td>selektor {border-top-left-radius: zaokrąglenie}</td>
+			</tr>
+
+			<tr>
+				<td>Zaokrąglenie górnego-prawego narożnika:</td>
+				<td>selektor {border-top-right-radius: zaokrąglenie}</td>
+			</tr>
+
+			<tr>
+				<td>Zaokrąglenie dolnego-lewego narożnika:</td>
+				<td>selektor {border-bottom-left-radius: zaokrąglenie}</td>
+			</tr>
+
+			<tr>
+				<td>Zaokrąglenie dolnego-prawego narożnika:</td>
+				<td>selektor {border-bottom-right-radius: zaokrąglenie}</td>
+			</tr>
+		</table><br />
+
+		<span style="text-decoration:underline">Zastosowanie:</span><br />
+		We wszystkich przypadkach selektorem może być dowolny znacznik, np.
+
+		<ul>
+			<li>p - akapit</li>
+			<li>h1 - nagłówek</li>
+			<li>div - blok</li>
+		</ul><br />
+
+		Natomiast "zaokrąglenie" określa promień wyrażony w jednostkach długości albo w procentach (względem obszaru obramowania - zobacz: Model pudełkowy). Możliwe jest tutaj podanie:
+
+		<ul>
+			<li>jednej wartości - zaokrąglenie symetryczne</li>
+			<li>dwóch wartości - pierwsza określa poziomy promień ćwiartki elipsy zaokrąglenia, adruga - pionowy</li>
+		</ul><br />
+
+		Zaokrąglone narożniki to bardzo ciekawy efekt wizualny, który może zwiększyć estetykę strony. Co ciekawe, element wcale nie musi mieć obramowania, aby miał zaokrąglone narożniki. Wystarczy jeśli będzie miał ustalone jakieś tło, aby efekt był widoczny na ekranie.<br /><br />
+
+		Ale uwaga: tekst wewnątrz elementu nie zostanie zawinięty do zaokrąglonych rogów. Jeśli promień zaokrąglenia będzie zbyt duży, tekst wyjdzie na zewnątrz.<br /><br />
+
+		Przykład:
+
+		<div style="border-style:solid;">border-top-right-radius:10px</div>
+
+		<hr /><br />
+
+		W definicja CSS bloku DIV należy wpisać:
+
+		<div style="border-style:solid;">
+			margin-left: auto;<br />
+			margin-right: auto;
+		</div>
+
+	</body>
+</html>

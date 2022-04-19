@@ -1,0 +1,43 @@
+body	{
+   	background-color: silver;
+		}
+
+p		{
+   	font-size: 10pt;
+  		}
+
+p:first-child	{
+ 				   font-size: 9mm;
+   				font-style: italic;
+					}
+
+div#pierwszy_kusaj {
+   					 background-color: rgb(240,248,255);
+   					 width: 748pt;
+						 margin-left: auto;
+						 margin-right: auto;
+    					 border-radius: 12px;
+   					 border-color: rgb(0,0,128);
+   					 border-style: solid;
+   					 border-width: 7px;
+						 }
+
+div#drugi_kusaj	{
+   					background-color: rgb(241,145,155);
+    					width: 948pt;
+   					border-radius: 12px;
+    					border-color: rgb(0, 0, 0);
+    					border-style: solid;
+    					border-width: 3px;
+						}
+
+div#trzeci_kusaj	{
+    					background-color: rgb(147,246,0);
+   					width: 1148pt;
+    					margin-left: auto;
+						margin-right: auto;
+   					border-radius: 10px;
+   					border-color: rgb(72,34,124);
+   					border-style: solid;
+   					border-width: 5px;
+						}

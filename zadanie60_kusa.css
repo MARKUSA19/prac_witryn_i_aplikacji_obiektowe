@@ -1,0 +1,25 @@
+div	{
+		width:612px;
+		background-color:green;
+		padding:5px 0 5px 0;
+		margin:10px;
+		}
+
+div#blok1_kusaj:hover	{
+								background-color:orange;
+								font-size:18mm;
+								}
+
+div#blok2_kusaj:hover	{
+								background-color:lightgreen;
+								font-size:18mm;
+								}
+
+div#blok3_kusaj:hover	{
+								background-color:gold;
+								font-size:18mm;
+								}
+
+/* hover to selektor, który wykonuje siê w momencie najechania myszk¹ nad elementem html */
+
+/* Marcin Kusaj, 3F */

@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Zadanie 24</title>
+		<title>Zadanie 58</title>
 		<meta charset="utf-8"></meta>
 	</head>
 
@@ -14,7 +14,7 @@
 			<span style="font-size:35px;">2. Uwaga dotycząca dwukropka:</span><br /><br />
 			Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy selektorem a nazwą klasy.
 		</p>
-		
+
 		<p style="font-size:25px;">
 			<span style="font-size:35px;">3. Tabela opisująca pseudoklasy.:</span><br /><br />
 			<table border="1" width="700px">
@@ -48,7 +48,7 @@
 				</tr>
 			</table>
 		</p>
-		
+
 		<p style="font-size:25px;">
 			<span style="font-size:35px;">4. Zastosowanie pseudoklasy :active</span>
 			<ol>
@@ -56,12 +56,56 @@
 				<li>jako elementu poprawiającego czytelność formularzy.</li>
 			</ol>
 		</p>
-		
+
 		<p style="font-size:25px;">
 			<span style="font-size:35px;">5. Przykłady kodów definiowania pseudoklas.</span><br /><br />
 			<table border="1"><td>
-				<span style="text-decoration:underline;">Temat:</span> Arkusz wykorzystujący <span style="font-weight:600">:link</span> oraz <span style="font-weight:600">:visited</span> pseudoklasy w połączeniu z selektorem A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu taki odnośnik będzie miał kolor zielony.
-			
+				<span style="font-weight:600">Przykład:</span><br /><span style="text-decoration:underline;">Temat:</span> Arkusz wykorzystujący <span style="font-weight:600">:link</span> oraz <span style="font-weight:600">:visited</span> pseudoklasy w połączeniu z selektorem A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu taki odnośnik będzie miał kolor zielony.<br /><br />
+
+				A:link<br />
+				{<br />
+				&emsp;color:red;<br />
+				}<br /><br />
+
+				A:visited<br />
+				{<br />
+				&emsp;color:green;<br />
+				}<br />
+			</td></table><br />
+
+			<table border="1"><td>
+				<span style="font-weight:600">Przykład:</span><br /><span style="text-decoration:underline;">Temat:</span> Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.<br /><br />
+
+				A /* Definicja odsyłacza podstawowego */<br />
+		  		{<br />
+				&emsp;font-size:12pt;<br />
+				&emsp;text-decoration:none;<br />
+				}<br /><br />
+
+				A:link<br />
+				{<br />
+				&emsp;color:navy;<br />
+				}<br /><br />
+
+				A:visited<br />
+				{<br />
+				&emsp;color:green;<br />
+				}<br /><br />
+
+				A:hover<br />
+				{<br />
+				&emsp;color:red;<br />
+				&emsp;text-decoration:underline;<br />
+				}<br />
+			</td></table><br />
+
+			<table border="1"><td>
+				<span style="font-weight:600">Przykład:</span><br /><span style="text-decoration:underline;">Temat:</span> Zastosowanie :focus<br /><br />
+
+				A:focus<br />
+				{<br />
+				&emsp;color:braun;<br />
+				}<br />
 			</td></table>
 		</p>
 	</body>
