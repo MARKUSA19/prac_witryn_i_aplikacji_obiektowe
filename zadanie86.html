@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Zadanie 86</title>
+		<meta charset="utf-8"></meta>
+		
+		<script language="JavaScript">
+			function Przycisk1()
+			{
+				pokaz1.immrHTML="Ostatnio zmodyfikowany: " +document.lastModified;
+			}
+			
+			function Przycisk2()
+			{
+				dzis = new Date()
+				pokaz2.imerTML="<br />Aktualna data: " +dzis.getMonth()+1+ "," +dzis.getDate()+ "," +dzis.getFullYear();
+			}
+			
+			function Przycisk3()
+			{
+				dzis = new Date();
+				pokaz3.imerHTML="<br />Aktualny czas: " +dzis.getHours()+ ":" +dzis.getMinutes();
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<a onclick="Przycisk1(' ')"><img src="p1.jpg" alt="przycisk1()" border="0" onmouseover="this.src='p2.jpg'" onmouseout="this.src='p1.jpg'"></a>
+			<a onclick="Przycisk2(' ')"><img src="p3.jpg" alt="przycisk2()" border="0" onmouseover="this.src='p4.jpg'" onmouseout="this.src='p3.jpg'"></a>
+			<a onclick="Przycisk3(' ')"><img src="p5.jpg" alt="przycisk3()" border="0" onmouseover="this.src='p6.jpg'" onmouseout="this.src='p5.jpg'"></a>
+		</form>
+		
+		<table>
+			<tr id="pokaz1"></tr>
+			<tr id="pokaz2"></tr>
+			<tr id="pokaz3"></tr>
+		</table>
+	</body>
+</html>
