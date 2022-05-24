@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Zadanie 84</title>
+		<meta charset="utf-8"></meta>
+
+		<script language="JavaScript">
+      	function kusaj_start() {
+         	start_kus = new Date();
+         	poczatek_kus = start_kus.getTime();
+        	}
+
+      	function kusaj_stop() {
+				stop_kus = new Date();
+         	koniec_kus = stop_kus.getTime();
+            roznica_kus = koniec_kus - poczatek_kus;
+         	pokaz1.innerHTML = roznica_kus / 1000 + " s";
+        	}
+    	</script>
+	</head>
+
+	<body>
+		<script language="JavaScript">
+			dzis_kus = new Date();
+			document.write("Aktualny czas: ", dzis_kus.getHours(), ":", dzis_kus.getMinutes(), "<br>");
+		</script>
+
+		<input type="button" name="Button1" value="START stoper" onclick="kusaj_start()">
+		<input type="button" name="Button2" value="STOP stoper" onclick="kusaj_stop()"><br /><br />
+
+      <table border="6">
+      	<tr id="pokaz1"></tr>
+      </table>
+	</body>
+</html>

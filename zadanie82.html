@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Zadanie 82</title>
+		<meta charset="utf-8"></meta>
+	</head>
+
+	<body>
+		<span style="font-size:52pt;color:red;">Kusaj</span><br />
+
+		<span style="font-size:30pt;color:green;">
+      	dzis = new Date() --> zmienna dzis zacznie określać datę<br />
+      	dzis = dzis.getHours() --> aktualna liczba godzin<br />
+      	dzis = dzis.getMinutes() --> aktualna minuta<br />
+      	dzis = dzis.getMonth() + 1 --> następny miesiąc<br />
+      	dzis = dzis.getDate() --> aktualny dzień<br />
+      	dzis = dzis.getFullYear() --> aktualny rok<br />
+		</span>
+
+      Ostatnio zmodyfikowany:
+      <script language="JavaScript">
+      	document.write(document.lastModified);
+      </script><br />
+      <button class="button" type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">Naciśnij mnie</button><br /><br /><br />
+
+      <script language="JavaScript">
+      	dzis = new Date()
+         document.write("<br>Aktualny czas: ", dzis.getHours(), ":", dzis.getMinutes());
+         document.write("<br>Aktualna data: ", dzis.getDate(), ".", dzis.getMonth() + 1, ".", dzis.getFullYear());
+      </script>
+	</body>
+</html>
